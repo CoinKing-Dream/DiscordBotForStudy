@@ -6,6 +6,9 @@ from urllib.request import urlopen
 import json
 import datetime
 import config
+from dotenv import load_dotenv()
+
+load_dotenv()
 
 intents = discord.Intents.default()
 intents.members = True
