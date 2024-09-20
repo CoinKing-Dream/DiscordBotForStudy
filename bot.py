@@ -10,12 +10,12 @@ from dotenv import load_dotenv()
 
 load_dotenv()
 
+token = os.getenv('DISCORD_BOT_TOKEN')
+
 intents = discord.Intents.default()
 intents.members = True
 intents.message_content = True
 bot = commands.Bot(command_prefix='/', intents=intents)
-
-token = config.bot_key
 
 #--- Bot Start
 @bot.event
